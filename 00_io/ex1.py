@@ -33,3 +33,7 @@ print(a)
 # map(함수, 리스트)
 a, b, c = map(int, input().split())
 print(a, b, c)
+
+# 리스트로 변환
+a = list(map(int, input().split()))
+print(a)
