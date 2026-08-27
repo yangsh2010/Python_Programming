@@ -35,3 +35,23 @@ print("Hello" + str(10))
 
 print("10" + "2")
 print(int("10") + int("2"))
+
+#문자열 포멧팅 (f string)
+name = "뽀로로"
+age = 23
+
+print(f"이름 : {name}, 나이 : {age}살")
+print(f"내년 나이 : {age + 1}살")
+print(f"{name.upper()}")
+
+pi = 3.141592
+
+print(f"{pi:.3f}")
+print(f"{pi:.0f}")
+
+num = 123456789
+
+print(f"{num:,}")
+print(F"{num:15d}")
+print(F"{num:<15d}")
+print(F"{num:15,d}")
