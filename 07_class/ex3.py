@@ -93,6 +93,7 @@ class Robot:
 for x in [Duck(), Robot()]:
     x.speak()
 
+
 # =========================================================
 #  🔥 실습 문제 : 도형 넓이 계산
 # =========================================================
@@ -124,7 +125,7 @@ class Circle(Shape):
         self.r = r
 
     def area(self):
-        return 3.14 * self.r ** 2
+        return 3.14 * self.r * self.r
 
 
 # Triangle 자식 클래스 작성하기
@@ -158,8 +159,11 @@ shapes = [Rectangle(3, 4), Circle(5), Triangle(6, 3)]
 total = 0
 
 for shape in shapes:
-    area = shape.area()
     print(f"{shape.name} 넓이: {shape.area()}cm")
     total += shape.area()
 
-print("전체 넓이:", str(total) + "cm")
+# 사각형 넓이: 12cm
+# 원 넓이: 78.5cm
+# 삼각형 넓이: 9.0cm
+
+print("전체 넓이:", total)  # 전체 넓이: 99.5cm
